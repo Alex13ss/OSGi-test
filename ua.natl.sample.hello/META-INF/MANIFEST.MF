@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HelloBundle
+Bundle-Description: Test bundle, created by Oleksandr Bandurka
+Bundle-SymbolicName: ua.natl.sample.hello
+Bundle-Version: 1.0.0
+Bundle-Activator: ua.natl.sample.hello.Activator
+Bundle-Vendor: NATL
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
