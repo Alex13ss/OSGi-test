@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Service
+Bundle-SymbolicName: ua.natl.sample.service
+Bundle-Version: 1.0.0
+Bundle-Activator: ua.natl.sample.service.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.framework;version="1.3.0"
+Export-Package: ua.natl.sample.service,
+ ua.natl.sample.service.implementation
+Bundle-ActivationPolicy: lazy
