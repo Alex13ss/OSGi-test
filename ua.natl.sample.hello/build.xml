@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="ua.natl.sample.hello" default="all">
+
+	<property name="lib.dir" location="E:/EclipseRCP/plugins" />
+
+	<target name="all" depends="clean,init,compile,jar" />
+
+	<target name="init">
+		<mkdir dir="./classes" />
+		<mkdir dir="C:/temp/plugins" />
+	</target>
+
+	<target name="compile">
+		<javac destdir="./classes" debug="on" srcdir="./src">
+			<classpath>
+				<fileset dir="${lib.dir}" includes="**/*.jar" />
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="jar">
+		<jar basedir="./classes" jarfile="C:/temp/plugins/${ant.project.name}.jar" compress="true" includes="**/*" manifest="META-INF/manifest.mf" />
+	</target>
+
+	<target name="clean">
+		<delete dir="./classes" />
+	</target>
+</project>
